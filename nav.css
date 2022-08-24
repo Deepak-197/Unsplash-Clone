@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,100&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header_wrapper {
+    background: #ffff;
+    z-index:99;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.header_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+}
+.header_left {
+    display: flex;
+    align-items: center;
+    width: 55%;
+}
+.header_logo {
+    width: 50px;
+    height: 50px;
+}
+.header_logo img {
+    width: 100%;
+    height: 100%;
+}
+form img {
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+ 
+.input_box {
+    margin-left: 7.5%;
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border: 1px solid #ddd;
+}
+.input_wrapper {
+    padding-left: 25px;
+    width: 100%;
+}
+.search_input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.input_box i {
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+    color: gray;
+    top:14px;
+}
+.input_box img {
+    position: absolute;
+    right: 15px;
+    color: black;
+    width: 20px;
+    height: 20px;
+}
+input::placeholder {
+   
+    font-size: 15px;
+    letter-spacing: .001em;
+}
+/* header right */
+.header_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.header_right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_right ul li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 8px 0px;
+    white-space: nowrap;
+}
+li.login {
+    border-right: 1px solid #a8a8a8;
+    padding-right: 15px !important;
+}
+li.singup {
+    margin-left: 15px;
+}
+.header_right ul li a {
+    color: rgb(2 2 2 / 84%);
+    text-decoration: none;
+    font-size: 14px;
+}
+button {
+    background: none;
+    outline: none;
+    border: 1px solid #bcbbbb;
+    border-radius: 3px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #666363;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+.submit i {
+    font-size: 20px;
+    color: #4a4949;
+}
+#navbar_components {
+    display: flex;
+    width: 100%;
+    margin-left: -2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding: 5px 40px;
+    
+}
+
+#navbar_components :hover {
+    border-bottom: 2px solid black;
+}
+#navbar_components > div {
+    margin-left: 2.5%;
+    font-size: 15px;
+    color: rgb(80, 75, 75);
+}
+
+ #navbar_box {
+    display: flex;
+    margin-top: 1.5%;
+    color: rgb(124, 119, 119);
+} 
