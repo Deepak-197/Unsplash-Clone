@@ -53,15 +53,33 @@
 .images{
     height: 80%;
     width: 80%;
-}
-#container .wide{
-    grid-column: span 2;
+    cursor: zoom-in;
+    border-radius: 2px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-#container .tall{
-    grid-row: span 2;
+.img_container{
+    position: relative;
+    text-align: center;
+    color: white;
 }
-#container .big{
-    grid-column: span 2;
-    grid-row: span 2;
-}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 100px;
+    
+  }
+  .fa-heart{
+    padding: 8px 8px;
+    background-color: rgb(124, 120, 120);
+    border-radius: 2px;
+  }
+  .fa-heart:hover{
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+
+
+  

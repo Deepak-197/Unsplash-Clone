@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Events</title>
     <link rel="stylesheet" href="styles\currentevents.css">
+    <script src="https://kit.fontawesome.com/75a6e54339.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,6 +32,7 @@
 
     <div id="container">
 
+
     </div>
 
 </body>
@@ -40,7 +42,7 @@
 <script>
 
     let url = `https://api.unsplash.com/photos?client_id=Rib8nTMAs3RXqWcoPCnV3kbiwygZEMwnIe5rQkSg3xU`
-    
+
     var res;
     fetch(url).then((res) => {
         return res.json().then((res) => {
@@ -49,6 +51,7 @@
             window.addEventListener("scroll", () => {
                 if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
                     appendImg(res)
+                    in_div(res);
                 }
             })
         })
@@ -61,18 +64,40 @@
         while (i < 11) {
             res.forEach(element => {
                 let div = document.createElement("div");
+                div.setAttribute("class","img_container")
 
 
                 let img = document.createElement("img");
                 img.setAttribute("class", "images")
                 img.src = element.links.download
 
-                div.append(img);
+
+                let div1 = document.createElement("div");
+                div1.innerText = "sdbjvik"
+                div1.setAttribute("class","top-right")
+                div1.innerHTML = '<i id="fa-heart" class="fas fa-heart "></i>'
+                div1.addEventListener("click",function(e){
+                    heartFunc(e);
+                })
+                
+               
+                div.append(img,div1);
                 container.append(div);
                 i++
             });
         }
     }
+
+    function heartFunc(e){
+        
+  
+        e.target.style.color = 'red';
+   
+    }
+
+    
+
+
 
 
 
