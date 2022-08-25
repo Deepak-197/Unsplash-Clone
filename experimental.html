@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/experiment.css">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/852a0e2330.js" crossorigin="anonymous"></script>
+    <title>Experimental</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://unsplash.com/favicon-32x32.png">
+</head>
+<body>
+    <!-- Navbar Section Start -->
+    <div id="navbar_container"></div>
+    <!-- Nvbar Secytion End -->
+
+    <!--Top-Mid Section -->
+    <div id="main-section1">
+        <div class="section">
+            <div class="section-content">
+                <div>
+                    <h1>Experimental</h1>
+                    <p>
+                        Through the use of unlikely textures, intriguing subject matter, and new
+                    <br>
+                    formats — photography has the power to challenge our perspectives and
+                    <br> 
+                    push creativity forward.
+                </p>
+              </div>
+
+                <div>
+                        <button id="submit1" title="Submit To Texture & Patterns">Submit To Experimental</button>
+                </div>
+            </div>
+
+
+            <div class="section-overlay">
+
+                <div>
+                    <span> Photo </span>
+                    <span style="opacity: 0.5"> by </span>
+                    <span>Dusty</span>
+
+                </div>
+
+                <div>
+                    <span style="opacity: 0.5;"> Read more about the </span>
+                    <span> Unsplash License </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--Top-Mid Section End-->
+
+      <div id="container1"></div>
+</body>
+</html>
+
+<script src="./scripts/experimental.js"></script>
+
+<script type="module">
+import navbar from './components/navbar.js';
+let cont = document.getElementById("navbar_container");
+cont.innerHTML = navbar();
+</script>
