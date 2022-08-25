@@ -202,15 +202,13 @@
 
      document.querySelector("#container").append(box);
  });
-
- function addedtowish(item) {
+ function addedtowish(item) 
+ {
      console.log(item);
      wishArr.push(item);
      localStorage.setItem("Wish", JSON.stringify(wishArr));
      alert("Added to wishlist")
  }
-
-
  function addedtocart(item) {
      console.log(item);
      cartArr.push(item);
