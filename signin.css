@@ -7,10 +7,10 @@
 }
 #whole_screen>div{
     width: 100%;
-    border: 1px solid transparent;
+    border: 1px solid red;
 }
 #whole_screen>div:nth-child(1){
-   width: 75%;
+   
 }
 
 #whole_screen>div:nth-child(2){
@@ -18,7 +18,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    border: 1px dotted transparent;
+    border: 1px dotted red;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     /* border-radius: 10px; */
 }
@@ -157,8 +157,4 @@ input:hover{
  #or{
     font-size: 13px;
     color:gray;
- }
- #slideing_image>img{
-    width: 100%;
-    height: 100%;
  }
