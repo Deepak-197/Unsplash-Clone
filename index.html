@@ -3,50 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/852a0e2330.js" crossorigin="anonymous"></script>
+    <title>HomePage</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://unsplash.com/favicon-32x32.png">
 </head>
-<style>
-img{
-height: 410px;
-width: 100%;
-}
-
-#id{
-display: grid;
-grid-template-columns: repeat(3,550px);
-grid-template-rows: repeat(3,1fr);
-justify-content: space-evenly;
-gap: 10px;
-
-
-
-}
-
-#mid{
-    display: grid;
-grid-template-columns: repeat(3,550px);
-grid-template-rows: repeat(3,1fr);
-justify-content: space-evenly;
-gap: 10px;
-
-}
-
-</style>
 <body>
+ <!-- Navbar Section Start -->
+ <div id="nav_container"></div>
+ <!-- Nvbar Secytion End -->
 
-<div id="container"></div>
+ <div id="main-section">
+    <div class="section">
+        <div class="section-content">
+            <div>
+                <h1>Unsplash</h1>
+                <p>
+                    The internet’s source of freely-usable images.
+                <br>
+                Powered by creators everywhere.
+            </p>
+
+            <input id="wanda" onkeypress="debounce(main,1000)" type="text" placeholder="Search Photos">
+
+            <p>Trending:flower wallpapers backgrounds happy love</p>
+          </div>
+        </div>
 
 
-   <div id="id"></div> 
+        <div class="section-overlay">
 
+            <div>
+                <span> Photo of the Day </span>
+                <span style="opacity: 0.5;"> by </span>
+                <span> Fakurian Design </span>
 
+            </div>
+
+            <div>
+                <span style="opacity: 0.5;"> Read more about the </span>
+                <span> Unsplash License </span>
+
+            </div>
+
+            <div>
+                <div style="margin-left: 170px; font-size: 16px; margin-bottom: 6px;">
+                    Squarespace
+                </div>
+
+                <div>
+                    Start your website with Squarespace today.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="mid"></div>
 
-
- 
-
 </body>
 </html>
+
 <script src="/scripts/homepage.js"></script>
+
+<script type="module" >
+    import navbar from './components/navbar.js'
+    let cont1 = document.getElementById("nav_container")
+    cont1.innerHTML = navbar();
+</script>

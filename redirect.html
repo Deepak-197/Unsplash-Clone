@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/852a0e2330.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #redirect
+        {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: aut auto auto;
+            gap: 5px;
+            margin: auto;
+        }
+        img
+        {
+         height: 200px;
+         width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav_container"></div>
+    <div id="redirect"></div>
+</body>
+</html>
+<script src="./scripts/redirect.js" ></script>
+<script type="module" >
+    import navbar from './components/navbar.js'
+    let cont1 = document.getElementById("nav_container")
+    cont1.innerHTML = navbar();
+</script>
