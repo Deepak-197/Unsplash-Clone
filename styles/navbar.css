@@ -1,94 +1,77 @@
  #navbar_container
  {
-    margin-top: -10%;
-    position: fixed;
-    background-color: white;
- }
- #navbar_container a{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    margin-left:1%; 
+}
+ #navbar_container a
+ {
     color: rgb(146, 141, 141);
     text-decoration: none;
 }
 
-#navbar_box {
+#navbar_box 
+{
     display: flex;
-    margin-top: 1.5%;
     color: rgb(124, 119, 119);
+    height: 40px;
+    text-align: center;
+    gap:40px;
 }
-
 #logo {
-    height: 32px;
-    width: 40px;
-    margin-left: 9%;
+    height: 35px;
+    width: 35px;
+    margin-left: 0%;
 }
-
-.nav-search-form input{
-    padding: 12px;
+#search{
+    border: 1px solid rgb(124, 119, 119);;
+    width: 50%;
+    margin-left: 0%;
     border-radius: 20px;
-    border: 0.5px solid rgb(175, 167, 167);
-    background-color: #eee;
-    margin-left: 2.5%;
-    margin-top: -3px;
-    width: 900px;
-    font-size: 15px;
-    color: rgb(61, 60, 60);
-
+    text-align: left;
+    padding-left: 15px;
+    background-color: #eeeeee;
 }
-.nav-search-form input:focus{
- background:rgb(248, 246, 246);;
-}
-
-#navbar_components {
+#navigation {
     display: flex;
-    width: 100%;
-    margin-left: -2%;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    padding: 5px 40px;
-    
-}
-
-#navbar_components :hover {
-    border-bottom: 2px solid black;
-}
-#navbar_components > div {
-    margin-left: 2.5%;
-    font-size: 15px;
-    color: rgb(80, 75, 75);
-}
-
-#submit_photo {
-    display: block;
-    border: 1px solid grey;
-    border-radius: 4px;
-    transition: filter 0.5s;  
-    margin-left: 1%;
-    width: 32%;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 7px;
-    border: 1px solid #dadcdf;
+    gap: 20px;
+    margin-top: 0.5%;
     text-align: center;
 }
-
-#submit_photo :hover{
-    filter: brightness(85%);
+#submit_photo
+{
+border-radius: 5px;
+width:30%;
+padding-top: 6.5px;
+border: 1px solid #d7d7d7;
+margin-top: -6.5px;
 }
-
-.navbar_right {
-    margin-left: 60px;
-    margin-right: 25px;
-    margin-top: 10px;
+.nav_img 
+{
+width: 70%;
+height: 70%;
+margin-top: 6px;
 }
-
-.nav_img {
-    width: 31%;
-    height: 39%;
+#navbar_components{
+   display: flex;
+   gap: 20px;
+   /* color: rgb(146, 141, 141); */
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:20px;
+    margin-left: 1%;
 }
-
-.nav_img_margin {
-    margin-left: -10%;
-   
+#navbar_components a
+{
+    color:teal;
+    text-decoration: none;
+}
+#navbar_components a:hover
+{
+    color:orangered;  
 }

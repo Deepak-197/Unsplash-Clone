@@ -1,6 +1,6 @@
 .section {
     height: 570px;
-    background: url(https://images.unsplash.com/photo-1659946044653-1c24e586e989?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background: url(https://images.unsplash.com/photo-1660804369322-25b5bc9733e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGhtZW52UWhVbXhNfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-size: 100% 770px;
     width: 100%;
     }
@@ -30,7 +30,7 @@
         font-family: 'Poppins', sans-serif;
         font-size: medium ;
     }
-    #submit1
+    #submit
     {
         border:1px solid black;
         border-radius: 5px;
@@ -66,7 +66,7 @@
 
     /* container Part CSS */
 
-    #container1 {
+    #container {
         line-height: 0;
         -webkit-column-count: 3;
         -webkit-column-gap: 20px;
@@ -78,18 +78,18 @@
         overflow: hidden;
       }
       
-        #container1 img {
+        #container img {
         width: 100% !important;
         height: auto !important;
         margin-bottom: 25px;
       }
       
-      #Overlay1 
+      #Overlay 
       {
         margin-bottom: 80px;
       }
       
-      #Overlay1 img 
+      #Overlay img 
       {
         opacity: 5;
         transition: 0.6s;
@@ -107,7 +107,7 @@
     gap: 20px;
 }
       
-#Overlay1:hover .align 
+#Overlay:hover .align 
 {
 opacity: 1;
 }
@@ -126,7 +126,7 @@ opacity: 1;
       }
       
       @media screen and (min-width: 0px) and (max-width: 420px) {
-        #container1 {
+        #container {
           line-height: 0;
           -webkit-column-count: 1;
           -webkit-column-gap: 5px;
@@ -136,7 +136,7 @@ opacity: 1;
           column-gap: 5px;
         }
       
-        #container1 img {
+        #container img {
           width: 100% !important;
           height: auto !important;
           margin-bottom: 5px;
@@ -144,7 +144,7 @@ opacity: 1;
       }
       
       @media screen and (min-width: 421px) and (max-width: 920px) {
-        #container1 {
+        #container {
           line-height: 0;
           -webkit-column-count: 2;
           -webkit-column-gap: 10px;
