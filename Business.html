@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/Business.css">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b96ee7249.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/852a0e2330.js" crossorigin="anonymous"></script>
+    <title>Business & Work| Unsplash</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://unsplash.com/favicon-32x32.png">
+</head>
+<body>
+
+    <div id="nav_container"></div>
+  
+
+    <div id="sect_main">
+        <div class="sect">
+            <div class="sect-content">
+                <div>
+                    <h1>Business & Work</h1>
+                    <p>
+                        Reflecting the realities of the modern workplace in their many forms — from
+                    <br>
+                    images of remote working and start-ups to shots of engineers and artists at
+                    <br>
+                    work.
+        </p>
+              </div>
+
+                <div>
+                        <button id="submitbtn" title="Submit to Business & Work">Submit to Business & Work</button>
+                </div>
+            </div>
+
+
+            <div class="Overlay1_sect">
+
+                <div>
+                    <span> Photo   </span>
+                    <span style="opacity: 0.5;"> by </span>
+                    <span> Ascel Kadhem</span>
+
+                </div>
+
+                <div>
+                    <span style="opacity: 0.5;"> Read more about the </span>
+                    <span> Unsplash License </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+      <div id="containerr"></div>
+</body>
+</html>
+<script src="./scripts/Business.js"></script>
+<script type="module" >
+    import navbar from './components/navbar.js'
+    let cont = document.getElementById("nav_container")
+    cont.innerHTML = navbar();
+</script>
