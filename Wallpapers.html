@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/852a0e2330.js" crossorigin="anonymous"></script>
     <title>Wallpapers</title>
     <link rel="stylesheet" href="./styles/Wallpapers.css">
     <script src="https://kit.fontawesome.com/6b96ee7249.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/75a6e54339.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <br><br><br><br><br>
+
+      <!-- Navbar Section Start -->
+ <div id="nav_container"></div>
+ <!-- Nvbar Secytion End -->
 
     <div class="top-bg">
         <div class="inside-bg">
@@ -27,12 +35,13 @@
 
     </div>
 
-    <div id="container">
-
-
-    </div>
-    
+    <div id="container5"></div>
 </body>
 </html>
 
 <script src="./scripts/Wallpapers.js"></script>
+<script type="module" >
+    import navbar from './components/navbar.js'
+    let cont1 = document.getElementById("nav_container")
+    cont1.innerHTML = navbar();
+</script>

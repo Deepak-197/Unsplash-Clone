@@ -4,22 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./styles/fashion.css">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/852a0e2330.js" crossorigin="anonymous"></script>
     <title>Fashion</title>
-<link rel="stylesheet"  href="./styles/fashion.css">
 </head>
 <body>
-<div id="top">
+
+ <!-- Navbar Section Start -->
+ <div id="nav_container"></div>
+ <!-- Nvbar Secytion End -->
+
+<!-- <div id="top">
 <p id="p">Fashion</p>
 <p id="q">From street-style shots to editorial photography — find the latest trends in beauty and fashion.</p>
 <button>Submit to Fashion</button>
 <img  id="top1" src="./styles/anamnesis33-KzQMfKBsHzA-unsplash.jpg"/>
+</div> -->
+ <!--Top-Mid Section -->
+ <div id="main-section">
+    <div class="section">
+        <div class="section-content">
+            <div>
+                <h1>Fashion</h1>
+                <p>
+                    From street-style shots to editorial photography — find the latest trends in beauty and fashion.
+            </div>
+
+            <div>
+                <button id="sub" title="Submit To Texture & Patterns">Submit To Fashion</button>
+        </div>
+        </div>
 
 
+        <div class="section-overlay">
 
+            <div>
+                <span> Photo by  </span>
+                <span style="opacity: 0.5;"> by </span>
+                <span>  Hiroyuki Sen </span>
+
+            </div>
+
+            <div>
+                <span style="opacity: 0.5;"> Read more about the </span>
+                <span> Unsplash License </span>
+
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <div id="mid_section"></div>
+
 </body>
 </html>
 <script src="./scripts/fashion.js"></script>
+<script type="module" >
+    import navbar from './components/navbar.js'
+    let cont1 = document.getElementById("nav_container")
+    cont1.innerHTML = navbar();
+</script>

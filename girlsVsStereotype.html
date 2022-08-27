@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./styles/nature.css">
+    <link rel="stylesheet" type="text/css" href="./styles/girlVsStereotype.css">
     <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b96ee7249.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/852a0e2330.js" crossorigin="anonymous"></script>
-    <title>Nature | Unsplash</title>
+    <title>girlVsStereotype</title>
     <link rel="icon" type="image/png" sizes="32x32" href="https://unsplash.com/favicon-32x32.png">
-    <link rel="stylesheet" href="girlVsStereotype.css">
 </head>
 <body>
 
-    <div id="navbar_container"></div>
+    <div id="nav_container"></div>
   
 
     <div id="sec_main">
@@ -63,7 +62,7 @@
     </div>
       <!--Top-Mid sec End-->
 
-      <div id="container2"></div>
+      <div id="contain"></div>
 
       <div id="last_ind">
         <img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" alt="">
@@ -72,4 +71,9 @@
       </div>
 </body>
 </html>
-<script src="girlVsStereotype.js"></script>
+<script src="./scripts/girlVsStereotype.js"></script>
+<script type="module" >
+    import navbar from './components/navbar.js'
+    let cont1 = document.getElementById("nav_container")
+    cont1.innerHTML = navbar();
+</script>

@@ -7,7 +7,7 @@
     .sec-content{
         height: 300px;
         width: 50%;
-        margin-top:10%;
+        margin-top:1%;
         border-bottom: 10px;
         margin-left:3%;
         padding: 5%;
@@ -134,6 +134,7 @@ opacity: 1;
           -moz-column-gap: 5px;
           column-count: 1;
           column-gap: 5px;
+          margin-top: -2%;
         }
       
         #container2 img {

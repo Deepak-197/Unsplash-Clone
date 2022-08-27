@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <div id="navbar_container"></div>
+    <div id="nav_container"></div>
   
 
     <div id="sec_main">
@@ -62,3 +62,8 @@
 </body>
 </html>
 <script src="./scripts/nature.js"></script>
+<script type="module" >
+    import navbar from './components/navbar.js'
+    let cont1 = document.getElementById("nav_container")
+    cont1.innerHTML = navbar();
+</script>
