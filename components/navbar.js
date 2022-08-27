@@ -55,7 +55,7 @@ function navbar()
 
         <div class="ken"><a href="nature.html">Nature</a></div>
 
-        <div class="ken"><a href="#">Business & Work</a></div>
+        <div class="ken"><a href="Business.html">Business & Work</a></div>
 
         <div class="ken"><a href="fashion.html">Fashion</a></div>
 
