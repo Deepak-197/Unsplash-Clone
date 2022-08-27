@@ -1,70 +1,64 @@
-let navbar =()=>{
-    return `
+function navbar()
+{
+  return `
+  <div id="navbar_container">
+
     <div id="navbar_box">
-    <div class="header_wrapper">
-    <div class="header_section">
-      <div class="header_left">
-       <div class="header_logo">
-        <a href="/index.html"> <img src="https://unsplash-assets.imgix.net/marketing/press-symbol.svg?auto=format&fit=crop&q=60" alt="unplash logo"></a>
-       </div>
-       <form action="./search.html">
-        <div class="input_box">
-           <div class="input_wrapper">
-             <input type="text"  name="search" placeholder="search photos" class="search_input" >
-           </div>
-         <i class="fa-solid fa-magnifying-glass"></i>
-         <img src="https://www.bing.com/rp/XvRHqJwJt19aXQca73hQTfvNMxk.svg" alt="visual search">
+    
+        <div><a href="index.html"><img  id="logo" src="https://unsplash-assets.imgix.net/marketing/press-symbol.svg?auto=format&fit=crop&q=60"/></a></div>
+
+        <input type="text" placeholder="Search free high resolution photos" id="search"/>
+
+        <div id="navigation" >
+
+            <div><a href="#">Explore</a></div>
+        
+            <div><a href="#"> Advertise</a> </div>
+
+            <div><a href="#">Blog</a></div>  
+            
+
+            <div style="width: 60px;"><a href="login.html">Log in</a></div>
+            <h2 style="margin-top:-5px;">|</h2>
+            <div style="width: 80px;"> <a href="signup.html">sign up</a></div>
+
+
+            <div id="submit_photo"><a href="#">Submit a Photo</a></div>
+
         </div>
-     </form>
-      </div>
-      <div class="header_right">
-        <ul>
-          <li><a href="#">Explore</a></li>
-          <li><a href="#">Advertise</a></li>
-          <li><a href="#">Blog</a></li>
-          <li class="login"><a href="#">Login</a></li>
-          <li class="Singup"><a href="#">Sign up</a></li>
-        </ul>
-        <div class="submit">
-          <button>Submit a photo</button>
-          <i class="fa-solid fa-bars" id="menubar"></i>
-        </div> 
-      </div>
-     </div>
-     </br>
-      
-      <div id="navbar_components">
 
-      <div ><a href="#">Editorial</a></div>
+            <div>
+                <a href="#"><img class="nav_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///90d3lydXdvcnT8/PySlZekpafT09PIysq2t7l4en1ydXj19fXt7e1+gYO5urvg4eGeoKGJjI2Vl5nm5uasrq+FiIrDxcZ9gIHQ0tK+wMBrbnCZm53Z2dnp6uqPkZS8MJHGAAADZElEQVR4nO3di46jIBQGYDm0ar2PVWurre//lqvTmUl2A9TukJBz8n9PwB9QvHAgigAAAAAAAAAAAAAAAAAAAAAAwK24X1Nurvdyd7zbopTmh1Rb7wl5uI254oqyU/Eq4OOsQzfzV6alcQdsKgrdxl9LXAE7/vlUPjkiFlXo5nmR2e83Pe9r8Bt9WC9CAWP0k7aN05jvNPE3OpoDlkPolnmTmaeMRMZVuNE3yfeZT7Mx4SzlRrNqjQmX0M3yqDImbEM3yyNzwrOcUUqDMWEsJ6EyT4gXOfdSOhkTdlnohvlzNyY8HMUM08Hypp9KGaa6NgeMDq2MTqTK+rFGwiv+Spuvwk83CeN06u0Bo+jE/xVRx66AUVQr5iOVnD24aQbNN2OuK8c1+CNdlFZEOS9ESuft5bAj4DprNJd4PnIzx7dmX77vmNy8Ew4AAAAAAAAAAAAAAADAmzKpY37qpNz5i635GLVSxI1SOpv3/OMu54nvegya2u5VwDTju05hQ8q8iP3HLXQLf8+93CTl3YFP1nV72zUYunF+kLUEUcoCUxpss8ZVRsB1nF4sCefQLfOFWvMC024M3TJ/zDO/mEXQayeab6eS6i3OxoTya2bk1z3JTzjzfaf4F5nrDyXVkJrr1QXNFpaH74eMHRU2llru6EPMdLFYHr3vUoapTs0B106UEZHO1m9upYgay5wcX6PuU+jmeTBZx+hGwEuw9fX3S9Nq1o82unJuorQpesbVa6TiPfuZdX2l8tCbr/0HUlX8YqOvH4curU/c1Ol7hV0AAAAAAAAAAAAAAAAA3oTeJPBt74Qr7v2xyripljh5edjTM9+pynmuq9E09jt+cl8HnvGedPVyB9MT53wr0rE7ooB1X3pxBexZr6X5oq3HPYk5S8e+NLEQs+u87Y4q5oALbT7eYu3C0C3zZjR3YhO6XR5djQlFHBvwZKkFlrOQ3XaSjpAa2U0uv7JrNCaUfyqZoOuQzM+m8iu7xJTMWNfrF3JO6RwtNSW9lAuRzEdYRtEjdMt8sR/4xP0Txheyn4ck41gyGh0fFUsBR6tT5txIqWN/P6XqRd1MMU+su3FaHu6Aq2TQOdOQpCtn7eG3QxIPKnSZ1n9QQ3zd9+NiG6tlk3DTPHbHAwAAAAAAAAAAAAAAAAAQ6g+lMYZLvXN4BwAAAABJRU5ErkJggg==" alt="">
+                </a>
+            </div>
+    </div>
+</div>
 
-      <div style="border: 0.1px solid black;"></div>
-      
-      <div><a href="#">Girls vs. Stereotypes</a></div>
+    <div id="navbar_components">
+        <div class="ken" ><a href="#">Editorial</a></div>
+        <div>|</div>
+        <div class="ken"><a href="#">Girls vs. Stereotypes</a></div>
+        <div class="ken"><a href="currentEvents.html">Current Events</a></div>
 
-      <div id="holiday"><a href="#">Current Events</a></div>
+        <div class="ken"><a href="#">Wallpapers</a></div>
 
-      <div><a href="#">Wallpapers</a></div>
+        <div class="ken"><a href="#">3D Renders</a></div>
 
-      <div><a href="#">3D Renders</a></div>
+        <div class="ken"><a href="texture.html">Textures & Patterns</a></div>
 
-      <div><a href="#">Textures & Patterns</a></div>
+        <div class="ken"><a href="experimental.html">Experimental</a></div>
+        
+        <div class="ken"><a href="#">Architecture</a></div>
 
-      <div><a href="#">Architecture</a></div>
+        <div class="ken"><a href="nature.html">Nature</a></div>
 
-      <div><a href="#">Experimental</a></div>
+        <div class="ken"><a href="#">Business & Work</a></div>
 
-      <div id="nature"><a href="#">Nature</a></div>
+        <div class="ken"><a href="#">Fashion</a></div>
 
-      <div><a href="#">Business & Work</a></div>
+        <div class="ken"><a href="#">Film</a></div>
 
-      <div><a href="#">Fashion</a></div>
-
-      <div><a href="#">Film</a></div>
-
-      <div><a href="#">Food & Drink</a></div>
-
-  </div>
-
-      `
-};
-export default navbar ;
+        <div class="ken"><a href="#">Food & Drink</a></div>
+    </div>`    
+}
+export default navbar

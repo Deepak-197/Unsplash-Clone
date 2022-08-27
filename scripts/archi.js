@@ -1,9 +1,9 @@
- 
+
  var TextureData = 
  [
      // Texture & Pattern
      {
-         image: "https://images.unsplash.com/photo-1659878776072-2b002700a297?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8aVVJc25WdGpCMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+         image: "https://images.unsplash.com/photo-1661357825210-35d236680e7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8aG1lbnZRaFVteE18fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
          price: 100
      },
      {
@@ -202,13 +202,15 @@
 
      document.querySelector("#container").append(box);
  });
- function addedtowish(item) 
- {
+
+ function addedtowish(item) {
      console.log(item);
      wishArr.push(item);
      localStorage.setItem("Wish", JSON.stringify(wishArr));
      alert("Added to wishlist")
  }
+
+
  function addedtocart(item) {
      console.log(item);
      cartArr.push(item);

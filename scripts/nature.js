@@ -1,33 +1,21 @@
  
- var TextureData = 
+ var NatureData = 
  [
-     // Texture & Pattern
+     // ature
      {
-         image: "https://images.unsplash.com/photo-1659878776072-2b002700a297?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8aVVJc25WdGpCMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+         image: "https://images.unsplash.com/file-1656361027924-fd935f26c71aimage",
+         price: 100 
+     },
+     {
+         image: "https://images.unsplash.com/photo-1661151578816-44d2691eb8bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60",
          price: 100
      },
      {
-         image: "https://images.unsplash.com/photo-1642233106024-7dc354cecdce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+         image: "https://images.unsplash.com/photo-1660912866771-097cc701b87d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60",
          price: 100
      },
      {
-         image: "https://images.unsplash.com/photo-1641996437783-14768819c2ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-         price: 100
-     },
-     {
-         image: "https://images.unsplash.com/photo-1641901853095-cfb99cf4e433?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-         price: 100
-     },
-     {
-         image: "https://images.unsplash.com/photo-1642100091126-f02217207faa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-         price: 100
-     },
-     {
-         image: "https://images.unsplash.com/photo-1580715198418-ee1a78fb9fe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-         price: 100
-     },
-     {
-         image: "https://images.unsplash.com/photo-1635695563052-02abf47a6ce9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+         image: "https://images.unsplash.com/photo-1661042524216-21590947e94e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60",
          price: 100
      },
      {
@@ -35,7 +23,19 @@
          price: 100
      },
      {
-         image: "https://images.unsplash.com/photo-1642097238406-b72bfd1747af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+         image: "https://images.unsplash.com/photo-1661010854342-acfc962a0352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60",
+         price: 100
+     },
+     {
+         image: "https://images.unsplash.com/photo-1661010854342-acfc962a0352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60",
+         price: 100
+     },
+     {
+         image: "https://images.unsplash.com/photo-1661041532707-9c2ea0758a95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60",
+         price: 100
+     },
+     {
+         image: "https://images.unsplash.com/photo-1660913905672-1c5511d7de0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60",
          price: 100
      },
      {
@@ -43,7 +43,7 @@
          price: 100
      },
      {
-         image: "https://images.unsplash.com/photo-1642071547159-d9dfd875353a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+         image: "image.png",
          price: 100
      },
      {
@@ -51,7 +51,7 @@
          price: 100
      },
      {
-         image: "https://images.unsplash.com/photo-1630094034541-c2d7ecfe9ac9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+         image: "https://images.unsplash.com/photo-1660811136764-c4c0ded63dc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
          price: 10
      },
      {
@@ -59,11 +59,11 @@
          price: 50
      },
      {
-         image: "https://images.unsplash.com/photo-1641984790242-d8aa477d306c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+         image: "https://images.unsplash.com/photo-1660811135321-437f46eba0a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
          price: 100
      },
      {
-         image: "https://images.unsplash.com/photo-1600693851121-05727e24fbe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+         image: "https://images.unsplash.com/photo-1660811135586-e43495a2fc21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
          price: 100
      },
      {
@@ -165,18 +165,19 @@
      },
  ];
 
- localStorage.setItem("texture", JSON.stringify(TextureData));
+ localStorage.setItem("nature", JSON.stringify(NatureData));
 
- var Texturedata = JSON.parse(localStorage.getItem("texture"));
+ var NatureData = JSON.parse(localStorage.getItem("nature"));
 
- var wishArr = JSON.parse(localStorage.getItem("Wish")) || [];
+ var wishlist_arr = JSON.parse(localStorage.getItem("Wish")) || [];
+
+ var download_arr = JSON.parse(localStorage.getItem("download")) || [];
 
  var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
-
- Texturedata.map(function (item) 
+NatureData.map(function (item) 
  {
      var box = document.createElement("div");
-     box.setAttribute("id", "Overlay")
+     box.setAttribute("id", "Overl")
 
      var image = document.createElement("img");
      image.setAttribute("src", item.image);
@@ -191,27 +192,44 @@
      });
 
      var btn2 = document.createElement("button");
-     btn2.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+     btn2.innerHTML = '<i class="fa-solid fa-arrow-down"></i>';
      btn2.addEventListener("click", function () {
+         addedtodownload(item);
+     });
+
+     var btn3 = document.createElement("button");
+     btn3.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+     btn3.addEventListener("click", function () {
          addedtocart(item);
      });
 
-     box1.append(btn1, btn2);
+     box1.append(btn1, btn2,btn3);
 
      box.append(image, box1);
 
-     document.querySelector("#container").append(box);
+     document.querySelector("#container2").append(box);
  });
- function addedtowish(item) 
- {
+
+ function addedtowish(item) {
      console.log(item);
-     wishArr.push(item);
-     localStorage.setItem("Wish", JSON.stringify(wishArr));
+     wishlist_arr.push(item);
+     localStorage.setItem("Wish", JSON.stringify(wishlist_arr));
      alert("Added to wishlist")
  }
- function addedtocart(item) {
+
+
+ function addedtodownload(item) {
      console.log(item);
-     cartArr.push(item);
-     localStorage.setItem("cart", JSON.stringify(cartArr));
-     alert("Added to cart")
+     download_arr.push(item);
+     localStorage.setItem("download", JSON.stringify(download_arr));
+     alert("Downloading")
  }
+
+ function addedtocart(item) {
+    console.log(item);
+    cartArr.push(item);
+    localStorage.setItem("cart", JSON.stringify(cartArr));
+    alert("Added to cart")
+}
+
+ 

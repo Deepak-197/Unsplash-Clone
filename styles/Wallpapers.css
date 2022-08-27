@@ -5,7 +5,7 @@
 }
 .top-bg{
     
-    background-image: url("https://images.unsplash.com/photo-1634821180452-03804764326f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80");
+    background-image: url("https://images.unsplash.com/photo-1660665477552-e0a28998165f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     height: 595px;
     width: 100%;
     opacity: 1.9;
@@ -41,6 +41,7 @@
     margin-left: 4px;
     font-weight: 600;
 }
+
 #container{
     margin: auto;
     margin-top: 35px;
@@ -79,7 +80,3 @@
     background-color: whitesmoke;
     color: black;
   }
-  
-
-
-  

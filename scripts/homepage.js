@@ -1,97 +1,116 @@
-let id=document.getElementById('id');
-let data;
-async function searchMovies()
+async function main()
 {
-
-    try{
-    
-        let url=`https://api.unsplash.com/photos/?client_id=o_k9t3W826h3GhoXShOFpc83POspnrHGc_83U5zrSqI`;
-        let res= await fetch(url)
-        
-         data= await res.json();
-         append(data)
-        // append()
-       
-     console.log(data)
-
-    }catch(err){
-    console.log(err)
-    }
-
-
-};
-
-searchMovies()
-
-
-function append(data){
-
-data.forEach(function(el){
-
-let div=document.createElement('div')
-
- let img=document.createElement('img');
- img.src=el.urls.regular;
-
-
- div.append(img);
-
- id.append(div)
-})   
+    let response = await searchphotos();
+    let data = await response;
+    append(data);
+    window.location.href = 'redirect.html';
 }
 
+let id;
 
+async function searchphotos()
+{
+    try
+    {
+      let query = document.getElementById("wanda").value;
+      let url = `https://api.unsplash.com/search/photos?query=${query}&client_id=nq09tWXzARwU8KjggUE_XnNLnGWL_evJwQuoDawY-Vo`
+      let res = await fetch(url);
+      let data = await res.json();
+      return data.results;
+    }
+    catch(e){
+        console.log(e);
+    }
+};
 
+function append(movies)
+{
+    if(movies == undefined)
+    {
+        return false;
+    }
 
-var TextureData = 
+    movies.forEach(function(elem)
+    {
+        let box= document.createElement("div")
+          box.className = "movie_tab"
+        let p= document.createElement("p")
+        p.innerText = elem.alt_description
+    
+        let poster=document.createElement("img")
+        poster.src=elem.urls.regular
+    
+        box.addEventListener("click", function()
+        {
+            window.location.href = "redirect.html";
+        })
+    
+        box.append(poster,p)
+ 
+    })
+}
+
+function debounce(fun,delay)
+{
+    if(id)
+    {
+        clearTimeout(id);
+    }
+    id = setTimeout(function()
+    {
+        fun()
+    },delay)
+}
+
+var HomeData = 
 [
-    // Texture & Pattern
+    // Home Data
     {
-        image: "https://images.unsplash.com/photo-1659878776072-2b002700a297?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8aVVJc25WdGpCMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1659535828770-6d9e1915b5dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1642233106024-7dc354cecdce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661457595254-df4aaa2d45c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1641996437783-14768819c2ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661458079058-dff4d487c7f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1641901853095-cfb99cf4e433?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661463991924-0eab3481b9d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1642100091126-f02217207faa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661493567913-91cc1c60d0f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1580715198418-ee1a78fb9fe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661464139731-d80cf83b40ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1635695563052-02abf47a6ce9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661466188999-b15479ec0ec3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1642100091126-f02217207faa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661435806039-7fd9dd9ee459?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1642097238406-b72bfd1747af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1659536540434-fabeb68f6fa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1641916739665-b0199522a08c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661470539019-6847429e86b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1642071547159-d9dfd875353a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1661474039567-9de2a29ef6df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
-        image: "https://images.unsplash.com/photo-1631371893503-048d3f05e34a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8YkRvNDhjVWh3bll8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1657299143548-658603d76b1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
         price: 100
     },
     {
@@ -207,33 +226,53 @@ var TextureData =
 ];
 
 
-let mid_div=document.getElementById('mid');
+localStorage.setItem("home", JSON.stringify(HomeData));
 
-function append2(TextureData){
+var Home_Data = JSON.parse(localStorage.getItem("home"));
 
-TextureData.forEach(function(el){
+var wish_arr = JSON.parse(localStorage.getItem("Wish")) || [];
 
-let div2=document.createElement('div');
+var cart_arr = JSON.parse(localStorage.getItem("cart")) || [];
 
-let img2=document.createElement('img');
+Home_Data.map(function (item) 
+{
+    var box = document.createElement("div");
+    box.setAttribute("class", "Overlay")
 
-img2.src=el.image;
+    var image = document.createElement("img");
+    image.setAttribute("src", item.image);
 
+    var box1 = document.createElement("div");
+    box1.setAttribute("class", "align")
 
+    var btn1 = document.createElement("button");
+    btn1.innerHTML = '<i class="fas fa-heart"></i>';
+    btn1.addEventListener("click", function () {
+        addedtowish(item);
+    });
 
-div2.append(img2);
+    var btn2 = document.createElement("button");
+    btn2.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+    btn2.addEventListener("click", function () {
+        addedtocart(item);
+    });
 
-mid_div.append(div2);
+    box1.append(btn1, btn2);
 
+    box.append(image, box1);
 
-
-console.log(img2)
-
-
-
-})
-
+    document.querySelector("#mid").append(box);
+});
+function addedtowish(item) 
+{
+    console.log(item);
+    wish_arr.push(item);
+    localStorage.setItem("Wish", JSON.stringify(wish_arr));
+    alert("Added to wishlist")
 }
-
-append2(TextureData)
-
+function addedtocart(item) {
+    console.log(item);
+    cart_arr.push(item);
+    localStorage.setItem("cart", JSON.stringify(cart_arr));
+    alert("Added to cart")
+}
