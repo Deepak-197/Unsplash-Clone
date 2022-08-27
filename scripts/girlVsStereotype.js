@@ -223,7 +223,7 @@ NatureData.map(function (item)
 
      box.append(image, box1);
 
-     document.querySelector("#container2").append(box);
+     document.querySelector("#contain").append(box);
  });
 
  function addedtowish(item) {

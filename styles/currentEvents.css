@@ -18,6 +18,7 @@
    
 }
 .inside-bg{
+    margin-top: 2%;
     width: 600px;
     display: flex;
     flex-direction: column;

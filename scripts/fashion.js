@@ -56,7 +56,7 @@ var imagesData =
         price: 10
     },
     {
-        image: "https://images.unsplash.com/photo-1659799609397-7be525543789?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60",
+        image: "https://images.unsplash.com/photo-1640600984860-9580f0b45ad5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfFM0TUtMQXNCQjc0fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         price: 50
     },
     {

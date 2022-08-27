@@ -36,11 +36,14 @@ function navbar()
 
     <div id="navbar_components">
         <div class="ken" ><a href="#">Editorial</a></div>
+
         <div>|</div>
-        <div class="ken"><a href="#">Girls vs. Stereotypes</a></div>
+
+        <div class="ken"><a href="girlsVsStereotype.html">Girls vs. Stereotypes</a></div>
+
         <div class="ken"><a href="currentEvents.html">Current Events</a></div>
 
-        <div class="ken"><a href="#">Wallpapers</a></div>
+        <div class="ken"><a href="Wallpapers.html">Wallpapers</a></div>
 
         <div class="ken"><a href="#">3D Renders</a></div>
 
@@ -54,9 +57,9 @@ function navbar()
 
         <div class="ken"><a href="#">Business & Work</a></div>
 
-        <div class="ken"><a href="#">Fashion</a></div>
+        <div class="ken"><a href="fashion.html">Fashion</a></div>
 
-        <div class="ken"><a href="#">Film</a></div>
+        <div class="ken"><a href="Film.html">Film</a></div>
 
         <div class="ken"><a href="#">Food & Drink</a></div>
     </div>`    
