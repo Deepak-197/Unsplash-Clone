@@ -4,130 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/search.css">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1176b352c6.js" crossorigin="anonymous"></script>
     <title>Beautiful Free Images & Pictures</title>
 </head>
-<style>
-#search1{
-
-height: 700px;
-width: 100%;
-background-image: none;
-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-}
-
-
-input{
-height: 60px;
-width: 55%;
-margin-top: 410px;
-margin-left: 380px;
-/* position: relative; */
-position: absolute;top: 0px;
-border-radius: 10px;
-
-}
-
-img{
-height: 700px;
-width:100% ;
-}
-
-p{
-position: absolute;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 54px;
-font-weight: bold;
-color: rgb(235, 237, 239);
-margin-top: 210px;
-margin-left: 365px;
-}
-
-#p1{
-font-size: 20px;
-font-family: 'Courier New', Courier, monospace;
-font-weight: lighter;
-margin-bottom: 500px;
-}
-
-
-#p11{
-    
-
-height: 75px;
-width: 15%;
-position: absolute;
-margin-top: 300px;
-margin-left: 380px;
-color: whitesmoke;
-font-size: 21px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-:placeholder-shown{
-font-size: 20px;
-}
-
-#three{
-display: flex;
-width: 98%;
-height: 28px;
-justify-content:space-between;
-position: absolute;
-margin-top: 650px;
-color: antiquewhite;
-font-size: 18px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-#photos 
-        {
-         display: grid;
-         grid-template-columns: repeat(3,650px);
-         grid-template-rows: repeat(3,750px);
-         gap: 20px; 
-         margin-top: 80px;  
-        }
-
-        #photos > div{
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        }
-
-
-h4{
-text-align: center;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 18px;
-font-weight: lighter;
-}
-</style>
 <body>
 
-<div id="search1">
-<p>Unsplash</p>
-
-<div id="p11">
-    <h5>The internet’s source of freely-usable images.
-        Powered by creators everywhere.</h5>    
-</div>
-
-<div id="three">
-<div>Photo by Sergey Sokolov</div>
-<div>Read more about the Unsplash License</div>
-<div>All you need to create a website.
-</div>
-</div>
-
-
-    <input oninput="debounce(main,1000)" type="text" id="search" placeholder="Search Free High-Resolution Photos">  
-<img src="https://images.unsplash.com/photo-1661511762608-fda6b7b45f18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1385&q=80"/>
-</div>
-
+     <!-- Navbar Section Start -->
+ <div id="nav_container"></div>
+ <!-- Nvbar Secytion End -->
 
 <div id="photos"></div>
 
 </body>
 </html>
 <script src="/scripts/searchbox.js"></script>
+<script type="module" >
+    import navbar from './components/navbar.js'
+    let cont1 = document.getElementById("nav_container")
+    cont1.innerHTML = navbar();
+</script>

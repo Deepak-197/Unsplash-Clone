@@ -22,8 +22,14 @@ function navbar()
             <h2 style="margin-top:-5px;">|</h2>
             <div style="width: 80px;"> <a href="signup.html">sign up</a></div>
 
+            <div id="submit_photo">
+            <a href="#">Submit a Photo</a>
+            </div>
 
-            <div id="submit_photo"><a href="#">Submit a Photo</a></div>
+            <div id = "Rex">
+            <i class="fa-regular fa-bell"></i>
+           <i class="fas fa-heart"></i>
+            </div>
 
         </div>
 
