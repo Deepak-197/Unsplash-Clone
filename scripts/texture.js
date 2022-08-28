@@ -169,11 +169,11 @@
 
  var Texturedata = JSON.parse(localStorage.getItem("texture"));
 
- var wishArr = JSON.parse(localStorage.getItem("Wish")) || [];
+ var wishArr = JSON.parse(localStorage.getItem("Wish"))||[];
 
- var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+ var cartArr = JSON.parse(localStorage.getItem("cart"))||[];
 
- Texturedata.map(function (item) 
+ Texturedata.map(function(item) 
  {
      var box = document.createElement("div");
      box.setAttribute("id", "Overlay")
@@ -209,7 +209,8 @@
      localStorage.setItem("Wish", JSON.stringify(wishArr));
      alert("Added to wishlist")
  }
- function addedtocart(item) {
+ function addedtocart(item) 
+ {
      console.log(item);
      cartArr.push(item);
      localStorage.setItem("cart", JSON.stringify(cartArr));

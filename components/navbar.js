@@ -27,8 +27,8 @@ function navbar()
             </div>
 
             <div id = "Rex">
-            <i class="fa-regular fa-bell"></i>
-           <i class="fas fa-heart"></i>
+            <a href = "cart.html"<i class="fa-regular fa-bell"></i></a>
+            <a href = "wishlist.html"<i class="fas fa-heart"></i></a>
             </div>
 
         </div>
