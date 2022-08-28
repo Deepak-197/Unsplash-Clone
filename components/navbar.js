@@ -23,7 +23,7 @@ function navbar()
             <div style="width: 80px;"> <a href="signup.html">sign up</a></div>
 
             <div id="submit_photo">
-            <a href="#">Submit a Photo</a>
+            <a href="login.html">Submit a Photo</a>
             </div>
 
             <div id = "Rex">
