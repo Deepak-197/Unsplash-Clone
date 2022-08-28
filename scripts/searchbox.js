@@ -1,68 +1,31 @@
-let div4=document.getElementById('photos');
 
+let Attach_Photos=document.getElementById('photos');
+let Collection_Arr = JSON.parse(localStorage.getItem("query"));
+display(Collection_Arr);
 
-
-async function main()
+function display(data)
 {
-    let response = await searchmovies();
-    let data = await response;
     console.log(data);
-    append(data);
-}
-let movies_div = document.getElementById("photos");
-let id;
-
-async function searchmovies()
-{
-    try
-    {
-    let query = document.getElementById("search").value;
-      let url = `https://api.unsplash.com/search/photos?query=${query}&client_id=nq09tWXzARwU8KjggUE_XnNLnGWL_evJwQuoDawY-Vo`;
-      let res = await fetch(url);
-      let data = await res.json();
-      return data.results;
-     
-    }
-    catch(e){
-        console.log(e);
-    }
-};
-
-function append(movies)
-{
-    console.log(movies);
-    movies_div.innerHTML=null;
-    if(movies == undefined)
+    Attach_Photos.innerHTML=null;
+    if(data == undefined)
     {
        
         return false;
         
     }
 
-    movies.forEach(function(elem)
+    data.forEach(function(elem)
     {
         let box= document.createElement("div")
-          box.className = "movie_tab"
+        box.className = "movie_tab"
         let p= document.createElement("h4")
-        p.innerText = elem.alt_description
-    
+        p.innerText = elem.alt_description;
+        p.className = "head_Sec";
         let poster=document.createElement("img")
         poster.src=elem.urls.regular
     
         box.append(poster,p)
     
-        div4.append(box)
+        Attach_Photos.append(box)
     })
-}
-
-function debounce(fun,delay)
-{
-    if(id)
-    {
-        clearTimeout(id);
-    }
-    id = setTimeout(function()
-    {
-        fun()
-    },delay)
 }

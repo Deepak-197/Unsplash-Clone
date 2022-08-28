@@ -3,7 +3,7 @@ async function main()
     let response = await searchphotos();
     let data = await response;
     append(data);
-    window.location.href = 'redirect.html';
+    window.location.href = "searchbox.html"
 }
 
 let id;
@@ -17,36 +17,33 @@ async function searchphotos()
       let res = await fetch(url);
       let data = await res.json();
       return data.results;
+      
     }
     catch(e){
         console.log(e);
     }
 };
 
-function append(movies)
+function append(data)
 {
-    if(movies == undefined)
+    localStorage.setItem("query",JSON.stringify(data));
+    if(data == undefined)
     {
         return false;
     }
 
-    movies.forEach(function(elem)
+    data.forEach(function(elem)
     {
         let box= document.createElement("div")
-          box.className = "movie_tab"
+          box.className = "collection_tab";
+
         let p= document.createElement("p")
         p.innerText = elem.alt_description
     
         let poster=document.createElement("img")
-        poster.src=elem.urls.regular
-    
-        box.addEventListener("click", function()
-        {
-            window.location.href = "redirect.html";
-        })
-    
+        poster.src=elem.urls.regular;
+
         box.append(poster,p)
- 
     })
 }
 
