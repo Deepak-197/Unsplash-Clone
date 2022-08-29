@@ -23,7 +23,6 @@ async function SearchPhotos()
         console.log(e);
     }
 };
-
 function Append(data)
 {
     localStorage.setItem("QUERY",JSON.stringify(data));
@@ -46,7 +45,6 @@ function Append(data)
         box.append(poster,p)
     })
 }
-
 function debounce(fun,delay)
 {
     if(ID)
@@ -58,6 +56,7 @@ function debounce(fun,delay)
         fun()
     },delay)
 }
+
 // Middle Search Function
 async function main()
 {
