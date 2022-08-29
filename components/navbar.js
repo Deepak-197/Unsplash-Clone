@@ -7,7 +7,7 @@ function navbar()
     
         <div><a href="index.html"><img  id="logo" src="https://unsplash-assets.imgix.net/marketing/press-symbol.svg?auto=format&fit=crop&q=60"/></a></div>
 
-        <input type="text" placeholder="Search free high resolution photos" id="search"/>
+        <input type="text" placeholder="Search free high resolution photos" id="query" onkeypress="debounce(Prox,1000)"/>
 
         <div id="navigation" >
 
